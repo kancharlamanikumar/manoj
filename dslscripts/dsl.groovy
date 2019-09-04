@@ -1,3 +1,4 @@
+def ciBuildTrigger = "job_dsl"
 def githubUrl = "https://github.com/kancharlamanikumar/manoj/"
 def repositoryUrl = "https://github.com/kancharlamanikumar/manoj.git"
 def branchName = "*/master"

@@ -3,15 +3,15 @@ def githubUrl = "https://github.com/kancharlamanikumar/manoj/"
 def repositoryUrl = "https://github.com/kancharlamanikumar/manoj.git"
 def branchName = "*/master"
 
-freeStyleJob(ciBuildTrigger) {
+mavenJob(ciBuildTrigger) {
     logRotator {
         numToKeep(3)
         artifactNumToKeep(1)
         }
     properties{
         githubProjectUrl(githubUrl)
-        }
-   jdk('linux-jdk-1.8.0_20')
+           }
+   //jdk('linux-jdk-1.8.0_20')
 //label 'node name'
    scm{
       git{

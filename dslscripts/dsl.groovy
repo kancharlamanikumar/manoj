@@ -1,4 +1,4 @@
-def ciBuildTrigger = "job_dsl"
+def ciBuildTrigger = "employee"
 def githubUrl = "https://github.com/kancharlamanikumar/manoj/"
 def repositoryUrl = "https://github.com/kancharlamanikumar/manoj.git"
 def branchName = "*/master"
@@ -12,7 +12,7 @@ freeStyleJob(ciBuildTrigger) {
         githubProjectUrl(githubUrl)
         }
    jdk('linux-jdk-1.8.0_20')
-   label 'node name'
+//label 'node name'
    scm{
       git{
          
@@ -24,7 +24,7 @@ freeStyleJob(ciBuildTrigger) {
         }
         }
    mavenInstallation("Maven-citools-3.3.9")
-   goals('clean install --debug checkstyle:checkstyle pmd:pmd spotbugs:spotbugs')
+   goals('clean install')
      publishers {
         archiveArtifacts('artifacts')
         }

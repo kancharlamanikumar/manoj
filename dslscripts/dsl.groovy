@@ -1,5 +1,5 @@
-def githubUrl = "https://github.com/kancharlamanikumar/manoj/${module}"
-def repositoryUrl = "https://github.com/kancharlamanikumar/manoj/${module}.git"
+def githubUrl = "https://github.com/kancharlamanikumar/manoj/"
+def repositoryUrl = "https://github.com/kancharlamanikumar/manoj.git"
 def branchName = "*/master"
 
 freeStyleJob(ciBuildTrigger) {
